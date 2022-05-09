@@ -7,3 +7,6 @@ Tags: cool, theme
 Author: Carl Johansson and John Jangard
 Author URI: https://google.com
 */
+.coolradius{
+    border-radius: 10px;
+}
