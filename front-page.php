@@ -62,14 +62,6 @@ get_header();
 
 <div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Cuper</h2>
-<div class="d-flex flex-row justify-content-evenly">
-    <div class="card shadow-lg" style="width: 27%;">
-        <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-    <h2 class="d-flex justify-content-center mb-3">Träningsläger</h2>
     <div class="d-flex flex-row justify-content-evenly">
         <div class="card shadow-lg" style="width: 27%;">
             <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
@@ -100,14 +92,6 @@ get_header();
 
 <div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Fotbollsresor</h2>
-<div class="d-flex flex-row justify-content-evenly">
-    <div class="card shadow-lg" style="width: 27%;">
-        <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-    <h2 class="d-flex justify-content-center mb-3">Träningsläger</h2>
     <div class="d-flex flex-row justify-content-evenly">
         <div class="card shadow-lg" style="width: 27%;">
             <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
