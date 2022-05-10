@@ -14,6 +14,15 @@ function cooltheme_register_scripts(){
 
 add_action( 'wp_enqueue_scripts', 'cooltheme_register_scripts');
 
+function cooltheme_menus(){
 
+    $locations = array(
+        'primary' => "Desktop Primary Menu",
+        'footer' => " Footer Menu"
+    );
+    register_nav_menus(($locations));
+}
+
+add_action('init', 'cooltheme_menus');
 
 ?>
