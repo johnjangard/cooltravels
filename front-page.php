@@ -12,7 +12,7 @@ get_header();
 <div class="bg-success pt-3 pb-3 mt-3 mb-3">
     <ul class="nav d-flex justify-content-around">
         <li class="nav-item">
-            <a class="nav-link btn btn-warning p-2" href="#">Träningsläger</a>
+            <a class="nav-link btn btn-warning p-2" href="http://cool_travels.test/travel_camp/uppsala-4/">Uppsala</a>
         </li>
         <li class="nav-item">
             <a class="nav-link btn btn-warning p-2" href="#">Cuper</a>

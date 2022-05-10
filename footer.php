@@ -1,6 +1,6 @@
 
 
-<div class="d-flex flex-row justify-content-evenly">
+<div class="d-flex flex-row bg-success justify-content-evenly">
     <div>
         <h2>Cooltravels</h2>
         <p>Lorem ipsum jada jada</p>

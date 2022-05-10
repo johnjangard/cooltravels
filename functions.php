@@ -1,5 +1,12 @@
 <?php
 
+function cooltheme_theme_support(){
+    add_theme_support('custom-logo');
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme','cooltheme_theme_support');
+
 function cooltheme_register_styles()
 {
     $version = wp_get_theme()->get('Version');
