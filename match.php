@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Name of Template 
+Template Name: Matches
 */
 get_header();
 
-$loop = new WP_Query(array('post_type' => 'travel_camp', 'posts_per_page' => 10));
+$loop = new WP_Query(array('post_type' => 'travel_matches', 'posts_per_page' => 10));
 
 while ($loop->have_posts()) : $loop->the_post();
 
