@@ -20,7 +20,7 @@ while ($loop->have_posts()) : $loop->the_post();
             <!-- <h5 class="card-title">Card title</h5> -->
             <?php
             the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
-            <a href="<?php echo get_permalink($post->ID); ?>" class=" btn btn-primary">Klicka här</a>
+             <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 
         </div>
