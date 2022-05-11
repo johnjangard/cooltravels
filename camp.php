@@ -3,13 +3,18 @@
 Template Name: Camps
 */
 get_header();
+?>
+<div class="d-flex">
+<div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg d-flex flex-row align-items-center justify-content-around flex-wrap">
+
+<?php
 
 $loop = new WP_Query(array('post_type' => 'travel_camp'));
 
 while ($loop->have_posts()) : $loop->the_post();
 
 ?>
-    <div class="card shadow-lg" style="width: 27%;">
+    <div class="card shadow-lg align-self-center mb-5" style="width: 27%;">
         <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <!-- <h5 class="card-title">Card title</h5> -->
@@ -24,5 +29,12 @@ while ($loop->have_posts()) : $loop->the_post();
 
 endwhile;
 
+?>
+
+</div>
+</div>
+
+
+<?php
 get_footer();
 ?>
