@@ -5,7 +5,7 @@ Template Name: Camps
 get_header();
 ?>
 <div class="d-flex">
-<div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg d-flex flex-row align-items-center justify-content-around flex-wrap">
+<div class="coolcolor pt-3 pb-5 mt-3 mb-3 shadow-lg d-flex flex-row align-items-center justify-content-around flex-wrap">
 
 <?php
 

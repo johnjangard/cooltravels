@@ -30,7 +30,7 @@ get_header();
     </form>
 </div>
 
-<div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg">
+<div class="coolcolor pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Träningsläger</h2>
     <div class="d-flex flex-row justify-content-evenly">
         <div class="card shadow-lg" style="width: 27%;">

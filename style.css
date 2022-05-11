@@ -10,3 +10,25 @@ Author URI: https://google.com
 .coolradius{
     border-radius: 10px;
 }
+.navbar>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.navbar>ul>li{
+    list-style: none;
+}
+.navbar>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #477eb6;
+}
+.coolcolor{
+    background-color: #fdfdfa;
+}
