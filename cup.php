@@ -18,12 +18,12 @@ get_header();
 
         ?>
             <div class="card shadow-lg align-self-center mb-5" style="width: 27%;">
-                <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
+                <img src="https://api.time.com/wp-content/uploads/2014/06/world-cup-trophy001.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <!-- <h5 class="card-title">Card title</h5> -->
                     <?php
                     the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
-                   
+
                     <p class="card-text"><?php echo substr($previewTravel, 0, 50); ?>...</p>
                     <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
 

@@ -19,7 +19,7 @@ get_header();
 
         ?>
             <div class="card shadow-lg align-self-center mb-5" style="width: 27%;">
-                <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
+                <img src="https://www.yourtrainingcamp.com/uploads/sport/1200px/sidestar-sport-1.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <!-- <h5 class="card-title">Card title</h5> -->
                     <?php
