@@ -3,10 +3,10 @@ get_header();
 ?>
 
 
-<div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp'); height: 100vh;">
-    <h1 class="text-white">Cool bild</h1>
-    <p class="text-white">Lite cool text</p>
-    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+<div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://wallpaperforu.com/wp-content/uploads/2021/04/Wallpaper-Soccer-Stadium-Football-Manchester-United-Old15-scaled.jpg'); height: 100vh;">
+    <h1 class="text-white">Välkommen till Cool Travels</h1>
+    <p class="text-white">Hitta din nästa sportresa här</p>
+    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">CTA</button>
 </div>
 
 <div class="bg-success pt-3 pb-3 mt-3 mb-3">
@@ -33,98 +33,89 @@ get_header();
 <div class="coolcolor pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Träningsläger</h2>
     <div class="d-flex flex-row justify-content-evenly">
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <?php
+
+        $loop = new WP_Query(array('post_type' => 'travel_camp', 'posts_per_page' => 3));
+        while ($loop->have_posts()) : $loop->the_post();
+        ?>
+            <div class="card shadow-lg" style="width: 27%;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgKmnyRdA8tDsGtzE5CpDc__BCpMXJl3W-ew&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <?php
+                    the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
+
+                    <p class="card-text"><?php the_excerpt() ?></p>
+                    <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
+
+                </div>
             </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <?php
+
+        endwhile;
+
+        ?>
     </div>
 </div>
 
-<div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg">
+<div class="coolcolor pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Cuper</h2>
     <div class="d-flex flex-row justify-content-evenly">
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <?php
+
+        $loop = new WP_Query(array('post_type' => 'travel_cup', 'posts_per_page' => 3));
+        while ($loop->have_posts()) : $loop->the_post();
+        ?>
+            <div class="card shadow-lg" style="width: 27%;">
+                <img src="https://www.yourtrainingcamp.com/uploads/sport/1200px/sidestar-sport-1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <?php
+                    the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
+
+                    <p class="card-text"><?php the_excerpt() ?></p>
+                    <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
+
+                </div>
             </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <?php
+
+        endwhile;
+
+        ?>
     </div>
 </div>
 
-<div class="bg-success pt-3 pb-5 mt-3 mb-3 shadow-lg">
+<div class="coolcolor pt-3 pb-5 mt-3 mb-3 shadow-lg">
     <h2 class="d-flex justify-content-center mb-3">Fotbollsresor</h2>
     <div class="d-flex flex-row justify-content-evenly">
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <?php
+
+        $loop = new WP_Query(array('post_type' => 'travel_soccer', 'posts_per_page' => 3));
+        while ($loop->have_posts()) : $loop->the_post();
+        ?>
+            <div class="card shadow-lg" style="width: 27%;">
+                <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <?php
+                    the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
+
+                    <p class="card-text"><?php the_excerpt() ?></p>
+                    <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
+
+                </div>
             </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-        <div class="card shadow-lg" style="width: 27%;">
-            <img src="/wp-content/themes/cooltheme/assets/images/Scaredchicken.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <?php
+
+        endwhile;
+
+        ?>
     </div>
 </div>
 
 </div>
 <div class="bg-image d-flex flex-column justify-content-center align-items-center" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/fluid/nature/015.webp'); height: 100vh;">
-    <h1 class="text-white">Cool resa på rea typ</h1>
-    <p class="text-white">Säljande text</p>
-    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">läs mer fyfan</button>
+    <h1 class="text-white">Placeholder för resekampanj</h1>
+    <p class="text-white">Hutta in dig själv i fotbollens magiska värld genom vårt erbjudande!</p>
+    <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Läs mer här</button>
 </div>
 
 <div class="d-flex flex-column align-items-center bg-success pt-3 pb-3 mt-3 mb-3">
@@ -187,17 +178,3 @@ get_header();
 
 <?php
 get_footer();
-
-// wp_head();
-// the_terms($post->ID, 'topics', 'Topics: ', ', ', ' ');
-// echo "Display this text";
-// // echo "pls";
-// // echo esc_html($post->ID);
-// // var_dump($post);
-// // $posts = get_posts([
-// //     'post_type' => 'movies',
-// //     'post_status' => 'publish',
-// //     'numberposts' => -1
-// //     // 'order'    => 'ASC'
-// // ]);
-// var_dump($post);

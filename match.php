@@ -11,15 +11,13 @@ get_header();
 
         $loop = new WP_Query(array('post_type' => 'travel_matches'));
         while ($loop->have_posts()) : $loop->the_post();
-            // $previewText =  the_content();
-
 
 
         ?>
             <div class="card shadow-lg align-self-center mb-5">
                 <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5> -->
+
                     <?php
                     the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
 
