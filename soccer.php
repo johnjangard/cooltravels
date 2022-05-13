@@ -25,7 +25,7 @@ get_header();
                     <?php
                     the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
 
-                    <p class="card-text"><?php echo substr($previewTravel, 0, 50); ?>...</p>
+                    <p class="card-text"><?php the_excerpt() ?></p>
                     <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
 
                 </div>
