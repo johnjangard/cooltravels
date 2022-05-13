@@ -1,11 +1,12 @@
 <?php
 
-function cooltheme_theme_support(){
+function cooltheme_theme_support()
+{
     add_theme_support('custom-logo');
     add_theme_support('post-thumbnails');
 }
 
-add_action('after_setup_theme','cooltheme_theme_support');
+add_action('after_setup_theme', 'cooltheme_theme_support');
 
 function cooltheme_register_styles()
 {
@@ -24,7 +25,8 @@ function cooltheme_register_scripts()
 add_action('wp_enqueue_scripts', 'cooltheme_register_scripts');
 /////////////Custom post and taxonomies //////////////
 
-function cooltheme_menus(){
+function cooltheme_menus()
+{
 
     $locations = array(
         'primary' => "Desktop Primary Menu",
@@ -44,32 +46,32 @@ add_action('init', 'cooltheme_menus');
 add_action('init', function () {
     $label = 'WCM Travels';
     $type = 'wcm_travel';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 add_action('init', function () {
     $label = 'Matcher';
     $type = 'travel_matches';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 add_action('init', function () {
     $label = 'Kupper';
     $type = 'travel_cup';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 add_action('init', function () {
     $label = 'Läger';
     $type = 'travel_camp';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 add_action('init', function () {
     $label = 'Fotboll';
     $type = 'travel_soccer';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 add_action('init', function () {
     $label = 'Lag';
     $type = 'netr_team';
-    register_post_type($type, ['public' => true, 'label'  => $label]);
+    register_post_type($type, ['public' => true, 'label'  => $label, 'supports' => ['title', 'editor', 'thumbnail', 'custom-fields']]);
 });
 
 
