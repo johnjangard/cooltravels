@@ -39,5 +39,3 @@ get_header();
 get_footer();
 ?>
 ?>
-
-POMO_Reader::substr( str, int $start, int $length )

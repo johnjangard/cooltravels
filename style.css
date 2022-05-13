@@ -40,7 +40,7 @@ Author URI: https://google.com
 
 .footer>ul>li>a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 .footer>ul>li{
     list-style: none;
@@ -59,7 +59,7 @@ Author URI: https://google.com
 }
 .footer-color{
     background-color: #c0c0c0;
-    color: white;
+    color: black;
 }
 
 
@@ -67,5 +67,9 @@ Author URI: https://google.com
 
 .card{
     width: 27%;
-    height: 680px;
+    height: 700px;
+}
+
+.nav-item>a{
+    color: white;
 }
