@@ -30,7 +30,8 @@ function cooltheme_menus()
 
     $locations = array(
         'primary' => "Desktop Primary Menu",
-        'footer' => " Footer Menu"
+        'footer' => "Footer Menu",
+        'footer_2' => "Second Footer Menu"
     );
     register_nav_menus(($locations));
 }

@@ -1,29 +1,35 @@
 
 
-<div class="d-flex flex-row bg-success justify-content-evenly">
-    <div>
-        <h2>Cooltravels</h2>
-        <p>Lorem ipsum jada jada</p>
+<div class="d-flex flex-column footer-color justify-content-evenly">
+
+    <div class="d-flex flex-column align-items-center">
+        <div>
+            <h2>Cooltravels</h2>
+        </div>
+        <div>
+            <p>Välkommen att navigera runt bland våra resekategorier och hitta resan som passar er!</p>
+        </div>
     </div>
-    <div class="d-flex flex-row">
-        <nav>
-            <h3>Menu</h3>
-            <ul>
-                <li>Träningsläger</li>
-                <li>Cuper</li>
-                <li>Fotbollsresor</li>
-            </ul>
+        <nav class="footer navbar-expand-lg sticky-top navbar-light d-flex justify-content-center mb-3">
+            <?php
+                wp_nav_menu(
+                    array(
+                    'menu' => 'footer',
+                    'container' => '',
+                    'theme_location' => 'footer'
+                    )
+          );
+      ?>
         </nav>
-        <nav>
-            <h3>Menu</h3>
-            <ul>
-                <li>Om oss</li>
-                <li>Kontakta oss</li>
-                <li>Nyheter</li>
-            </ul>
-        </nav>
-    </div>
+
+
+
+
+
 </div>
+
+
+
 
 <?php wp_footer(); ?>
 

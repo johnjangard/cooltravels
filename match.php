@@ -16,7 +16,7 @@ get_header();
 
 
         ?>
-            <div class="card shadow-lg align-self-center mb-5" style="width: 27%;">
+            <div class="card shadow-lg align-self-center mb-5">
                 <img src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHx8&w=1000&q=80" class="card-img-top" alt="...">
                 <div class="card-body">
                     <!-- <h5 class="card-title">Card title</h5> -->

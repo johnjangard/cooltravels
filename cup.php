@@ -12,21 +12,20 @@ get_header();
         $loop = new WP_Query(array('post_type' => 'travel_cup'));
         while ($loop->have_posts()) : $loop->the_post();
 
-
         ?>
-            <div class="card shadow-lg align-self-center mb-5" style="width: 27%;">
-                <img src="https://api.time.com/wp-content/uploads/2014/06/world-cup-trophy001.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <!-- <h5 class="card-title">Card title</h5> -->
-                    <?php
-                    the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
+        <div class="card shadow-lg align-self-center mb-5">
+            <img src="https://www.yourtrainingcamp.com/uploads/sport/1200px/sidestar-sport-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <!-- <h5 class="card-title">Card title</h5> -->
+                <?php
+                the_title('<h5 class="card-title"><a href="' . get_permalink() . '" title="' . the_title_attribute('echo=0') . '" rel="bookmark">', '</a></h5>'); ?>
 
-                    <p class="card-text"><?php the_excerpt() ?></p>
-                    <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
+                <p class="card-text"><?php the_excerpt() ?></p>
+                <a href="<?php echo get_permalink(); ?>" class=" btn btn-primary">Klicka här</a>
 
-                </div>
             </div>
-        <?php
+        </div>
+    <?php
 
         endwhile;
 
@@ -40,3 +39,5 @@ get_header();
 get_footer();
 ?>
 ?>
+
+POMO_Reader::substr( str, int $start, int $length )

@@ -10,6 +10,9 @@ Author URI: https://google.com
 .coolradius{
     border-radius: 10px;
 }
+
+
+/*Navbar för header*/
 .navbar>ul>li>a{
     text-decoration: none;
     color: white;
@@ -31,4 +34,38 @@ Author URI: https://google.com
 }
 .coolcolor{
     background-color: #fdfdfa;
+}
+
+/* Navbar för footer*/
+
+.footer>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.footer>ul>li{
+    list-style: none;
+}
+.footer>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer-color{
+    background-color: #c0c0c0;
+    color: white;
+}
+
+
+/* Card*/
+
+.card{
+    width: 27%;
+    height: 680px;
 }

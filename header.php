@@ -20,10 +20,8 @@
             'menu' => 'primary',
             'container' => '',
             'theme_location' => 'primary'
-
           )
           );
       ?>
+      </nav>
       </div>
-
-</nav>
