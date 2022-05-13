@@ -12,8 +12,7 @@ get_header();
         $loop = new WP_Query(array('post_type' => 'travel_matches'));
         while ($loop->have_posts()) : $loop->the_post();
             // $previewText =  the_content();
-            $previewTravel = get_the_content();
-            $previewTravel = strip_tags($previewTravel);
+
 
 
         ?>
